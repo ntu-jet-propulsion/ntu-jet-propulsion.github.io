@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome (for icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <style>
         body {
             font-family: 'Rajdhani', sans-serif;
             background-color: #000;
-            color: #ffffff; 
+            color: #ffffff;
             line-height: 1.6;
             background-image: url('https://www.transparenttextures.com/patterns/starry-night.png');
         }
@@ -25,13 +28,14 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.95)), 
-                        url('https://www.datocms-assets.com/117510/1722316800-rkt_lkc_art_02_gettingrocketstospace_spacestation.jpg') no-repeat center center;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.95)),
+                url('https://www.datocms-assets.com/117510/1722316800-rkt_lkc_art_02_gettingrocketstospace_spacestation.jpg') no-repeat center center;
             background-size: cover;
             text-align: center;
             padding: 0 2rem;
             position: relative;
         }
+
         #cover-page::after {
             content: '';
             position: absolute;
@@ -55,27 +59,27 @@
             font-family: 'Orbitron', sans-serif;
             font-size: 4.5rem;
             font-weight: 700;
-            color: #ffffff; 
+            color: #ffffff;
             margin-bottom: 1rem;
             text-shadow: 0 0 10px rgba(0, 168, 243, 0.7), 2px 2px 4px rgba(0, 0, 0, 0.8);
         }
 
         #cover-page .intro {
             font-family: 'Rajdhani', sans-serif;
-            font-style: normal; 
+            font-style: normal;
             font-size: 1.4rem;
-            color: #e0e0e0; 
+            color: #e0e0e0;
             margin-bottom: 2rem;
             text-shadow: 0 0 5px rgba(0, 168, 243, 0.5);
         }
 
         #content-page {
-            padding-top: 80px; 
+            padding-top: 80px;
         }
 
         .navbar {
             background-color: rgba(0, 0, 0, 0.95) !important;
-            border-bottom: 1px solid #00A8F333; 
+            border-bottom: 1px solid #00A8F333;
         }
 
         .navbar-brand img {
@@ -85,14 +89,16 @@
             filter: drop-shadow(0 0 5px rgba(0, 168, 243, 0.5));
         }
 
-        .navbar-brand, .nav-link {
-            font-family: 'Orbitron', sans-serif; 
+        .navbar-brand,
+        .nav-link {
+            font-family: 'Orbitron', sans-serif;
             color: #ffffff !important;
             align-items: center;
             display: flex;
         }
 
-        .nav-link:hover, .navbar-brand:hover {
+        .nav-link:hover,
+        .navbar-brand:hover {
             color: #00A8F3 !important;
             text-shadow: 0 0 8px rgba(0, 168, 243, 0.8);
         }
@@ -134,14 +140,16 @@
         .carousel-item img {
             object-fit: cover;
             height: 100%;
-            filter: brightness(0.6) contrast(1.1); 
+            filter: brightness(0.6) contrast(1.1);
         }
+
         .carousel-indicators button {
             width: 12px !important;
             height: 12px !important;
             border-radius: 50% !important;
             background-color: #ffffff80 !important;
         }
+
         .carousel-indicators .active {
             background-color: #00A8F3 !important;
             box-shadow: 0 0 8px rgba(0, 168, 243, 0.8);
@@ -164,14 +172,17 @@
         .card-text {
             color: #d4d4d4;
         }
-        
-        h2, h3 {
+
+        h2,
+        h3 {
             font-family: 'Orbitron', sans-serif;
         }
+
         h2 {
             font-size: 1.8rem;
             font-weight: 600;
         }
+
         h3 {
             font-size: 1.4rem;
             font-weight: 500;
@@ -179,7 +190,7 @@
 
         p.fs-5 {
             font-size: 1.2rem !important;
-            color: #e6e6e6; 
+            color: #e6e6e6;
         }
 
         footer {
@@ -197,8 +208,27 @@
             color: #00c2ff !important;
             text-shadow: 0 0 10px rgba(0, 168, 243, 0.8);
         }
+
+        /* Logo板块专属样式（新增） */
+        #logo-story .logo-img {
+            width: 220px;
+            filter: drop-shadow(0 0 12px rgba(0, 168, 243, 0.7));
+            display: block;
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .creator-links a {
+            margin-right: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .creator-links a:hover {
+            transform: translateY(-2px);
+        }
     </style>
 </head>
+
 <body>
     <div id="cover-page">
         <img src="./JET.png" alt="NTU Jet Propulsion Club Logo" id="cover-logo">
@@ -216,14 +246,17 @@
                     <img src="./JET.png" alt="NTU JPC Logo" id="nav-logo">
                     NTU JPC
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon text-white"><i class="fas fa-bars"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#logo-story">Our Logo</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#teams">Teams</a>
@@ -242,53 +275,107 @@
         <div class="container py-5">
             <div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="https://mechanical-engineering.com/wp-content/uploads/2021/07/how-rockets-work-shuttle.jpg" class="d-block w-100" alt="Rocket launch">
+                        <img src="https://mechanical-engineering.com/wp-content/uploads/2021/07/how-rockets-work-shuttle.jpg"
+                            class="d-block w-100" alt="Rocket launch">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2024/11/rfa_protein_study_concept_rocket_showing_stage_separation/26424764-2-eng-GB/RFA_Protein_study_concept_rocket_showing_stage_separation_pillars.png" class="d-block w-100" alt="Engineering workshop">
+                        <img src="https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2024/11/rfa_protein_study_concept_rocket_showing_stage_separation/26424764-2-eng-GB/RFA_Protein_study_concept_rocket_showing_stage_separation_pillars.png"
+                            class="d-block w-100" alt="Engineering workshop">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://cdn.builtin.com/cdn-cgi/image/f=auto,fit=cover,w=1200,h=635,q=80/sites/www.builtin.com/files/2025-06/what-is-spacex.jpg" class="d-block w-100" alt="Team collaboration">
+                        <img src="https://cdn.builtin.com/cdn-cgi/image/f=auto,fit=cover,w=1200,h=635,q=80/sites/www.builtin.com/files/2025-06/what-is-spacex.jpg"
+                            class="d-block w-100" alt="Team collaboration">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
 
             <section id="about" class="mb-5">
-                <h2 class="text-primary-custom border-bottom border-primary-custom pb-3 mb-4 d-inline-block">About Us</h2>
+                <h2 class="text-primary-custom border-bottom border-primary-custom pb-3 mb-4 d-inline-block">About Us
+                </h2>
                 <p class="fs-5">
-                    Hi! We are the <strong>Jet Propulsion Club (JPC)</strong> — the very first rocket and propulsion club at NTU. 
-                    Our members are driven by curiosity, collaboration, and the thrill of flight. 
-                    From design and simulation to fabrication and launch, we aim to push the boundaries of student rocketry in Singapore.
+                    Hi! We are the <strong>Jet Propulsion Club (JPC)</strong> — the very first rocket and propulsion
+                    club at NTU.
+                    Our members are driven by curiosity, collaboration, and the thrill of flight.
+                    From design and simulation to fabrication and launch, we aim to push the boundaries of student
+                    rocketry in Singapore.
                 </p>
             </section>
 
+            <section id="logo-story" class="mb-5">
+                <h2 class="text-primary-custom border-bottom border-primary-custom pb-3 mb-4 d-inline-block">Our Logo</h2>
+                <div class="row align-items-center g-4">
+                    <div class="col-md-4 text-center">
+                        <img src="./JET.png" alt="NTU JPC Logo" class="logo-img img-fluid">
+                    </div>
+                    <div class="col-md-8">
+                        <p class="fs-5 mb-3">
+                            The logo for the NTU Jet Propulsion Club was designed with a deep connection
+                            to the club's values and mission. Drawing inspiration from the elements of
+                            sky, fire, and rocket science, the design incorporates a lion to symbolize
+                            strength and courage, alongside a rocket to represent the club's focus on
+                            space exploration. The blue and white colors reflect the sky, while gold
+                            symbolizes the power of fire, and brown represents the lion's strength.
+                            The overall shape of the logo is crafted to resemble an insignia, evoking
+                            pride and unity among members. Designed by aaronsnapshots, this logo captures
+                            the essence of the club's core principles of Character, Competence,
+                            Conviction, and Fortitude.
+                        </p>
+                        <div class="mt-4 pt-3 border-top border-primary-custom/30">
+                            <p class="fs-5 mb-2">
+                                <strong class="text-primary-custom">Designed by:</strong> aaronsnapshots
+                            </p>
+                            <div class="creator-links">
+                                <a href="https://www.instagram.com/aaronsnapshots/" target="_blank"
+                                    class="text-primary-custom" title="Instagram">
+                                    <i class="fab fa-instagram fa-1_5x"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/aaron-payamel-a4018136b/" target="_blank"
+                                    class="text-primary-custom" title="LinkedIn">
+                                    <i class="fab fa-linkedin fa-1_5x"></i>
+                                </a>
+                                <a href="https://aaronite114.wixsite.com/aaronsnapshots?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnSqUsq0-Q7WPpikB-g380xOq1AOfs4CH-VQpnyX7y_suvzhgAP_K00dHU9ao_aem_ts2-pzXMI6ZHa4r-dmo_xQ"
+                                    target="_blank" class="text-primary-custom" title="Website">
+                                    <i class="fas fa-globe fa-1_5x"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section id="teams" class="mb-5">
-                <h2 class="text-primary-custom border-bottom border-primary-custom pb-3 mb-4 d-inline-block">Our Teams</h2>
+                <h2 class="text-primary-custom border-bottom border-primary-custom pb-3 mb-4 d-inline-block">Our Teams
+                </h2>
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-3">
                         <div class="card h-100 team-card">
                             <div class="card-body">
                                 <h3 class="card-title text-primary-custom">Propulsion</h3>
                                 <p class="card-text">
-                                   Team members in Propulsion deal with the heart of the vehicle and 
-                                   that is the motor, as well as other devices which deals with pressure. 
-                                   This sub-team is responsible in making sure our rocket propels 
-                                   forward with all it's might as well go through seperation for 
-                                   parachute deployment.
+                                    Team members in Propulsion deal with the heart of the vehicle and
+                                    that is the motor, as well as other devices which deals with pressure.
+                                    This sub-team is responsible in making sure our rocket propels
+                                    forward with all it's might as well go through seperation for
+                                    parachute deployment.
                                 </p>
                             </div>
                         </div>
@@ -298,8 +385,8 @@
                             <div class="card-body">
                                 <h3 class="card-title text-primary-custom">Structures</h3>
                                 <p class="card-text">
-                                    This team deals with the skeleton of the rocket and that would 
-                                    primarly be the airframe. They would have to design, simulate 
+                                    This team deals with the skeleton of the rocket and that would
+                                    primarly be the airframe. They would have to design, simulate
                                     and test the rocket while making sure the objectives are met.
                                 </p>
                             </div>
@@ -310,9 +397,9 @@
                             <div class="card-body">
                                 <h3 class="card-title text-primary-custom">Avionics</h3>
                                 <p class="card-text">
-                                    This team deals with the electrical side of things and 
-                                    gives life to the components of our rocket. These members 
-                                    design electrical circuits and decide the avionics components 
+                                    This team deals with the electrical side of things and
+                                    gives life to the components of our rocket. These members
+                                    design electrical circuits and decide the avionics components
                                     our rocket would need.
                                 </p>
                             </div>
@@ -323,10 +410,10 @@
                             <div class="card-body">
                                 <h3 class="card-title text-primary-custom">Payload</h3>
                                 <p class="card-text">
-                                    This is where innovation is driven. This team is incharge 
-                                    of building our CANSATs while meeting competition goals. 
-                                    This team could consist of multiple disciplines, from 
-                                    electrical, mechanical to biology to meet the needs 
+                                    This is where innovation is driven. This team is incharge
+                                    of building our CANSATs while meeting competition goals.
+                                    This team could consist of multiple disciplines, from
+                                    electrical, mechanical to biology to meet the needs
                                     of our CANSATs.
                                 </p>
                             </div>
@@ -337,9 +424,9 @@
                             <div class="card-body">
                                 <h3 class="card-title text-primary-custom">Admin</h3>
                                 <p class="card-text">
-                                    The Admin Team is incharge of outreach, logistics 
-                                    and publicity. With the significant works of members 
-                                    from the Admin Team, NTU JPC is able to put itself 
+                                    The Admin Team is incharge of outreach, logistics
+                                    and publicity. With the significant works of members
+                                    from the Admin Team, NTU JPC is able to put itself
                                     on the map and make things happen.
                                 </p>
                             </div>
@@ -350,8 +437,8 @@
                             <div class="card-body">
                                 <h3 class="card-title text-primary-custom">Finance</h3>
                                 <p class="card-text">
-                                    The Finance team deal with finance management 
-                                    as well as strategies to acquire funding to 
+                                    The Finance team deal with finance management
+                                    as well as strategies to acquire funding to
                                     keep the club's ventures going.
                                 </p>
                             </div>
@@ -361,10 +448,11 @@
             </section>
 
             <section id="join" class="mb-5">
-                <h2 class="text-primary-custom border-bottom border-primary-custom pb-3 mb-4 d-inline-block">Join Us</h2>
+                <h2 class="text-primary-custom border-bottom border-primary-custom pb-3 mb-4 d-inline-block">Join Us
+                </h2>
                 <p class="fs-5 mb-4">
-                    We’re always looking for passionate members who love science, engineering, and teamwork.  
-                    If you want to help us build, test, and launch — we’d love to hear from you.
+                    We’re always looking for passionate members who love science, engineering, and teamwork.
+                    If you want to help us build, test, and launch — we‘d love to hear from you.
                 </p>
                 <a href="mailto:ntujetpropulsionclub@gmail.com" class="btn btn-primary-custom btn-lg">
                     <i class="fas fa-envelope me-2"></i>Contact Us
@@ -372,9 +460,11 @@
             </section>
 
             <section id="follow" class="mb-5">
-                <h2 class="text-primary-custom border-bottom border-primary-custom pb-3 mb-4 d-inline-block">Follow Us</h2>
+                <h2 class="text-primary-custom border-bottom border-primary-custom pb-3 mb-4 d-inline-block">Follow Us
+                </h2>
                 <p class="fs-5">
-                    <a href="https://www.linkedin.com/company/ntu-jet-propulsion-club/?viewAsMember=true" target="_blank" class="text-primary-custom me-4">
+                    <a href="https://www.linkedin.com/company/ntu-jet-propulsion-club/?viewAsMember=true"
+                        target="_blank" class="text-primary-custom me-4">
                         <i class="fab fa-linkedin fa-2x"></i>
                     </a>
                     <a href="https://www.instagram.com/ntujpc" target="_blank" class="text-primary-custom">
@@ -395,4 +485,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
